@@ -13,12 +13,14 @@ File Encoding         : 65001
 Date: 2017-07-05 16:37:56
 */
 
-SET FOREIGN_KEY_CHECKS=0;
+
 
 -- ----------------------------
 -- Table structure for log_inf
 -- ----------------------------
-DROP TABLE IF EXISTS `log_inf`;
+CREATE DATABASE `log_inf`;
+USE `log_inf`;
+SET FOREIGN_KEY_CHECKS=0;
 CREATE TABLE `log_inf` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `date` datetime DEFAULT NULL,
